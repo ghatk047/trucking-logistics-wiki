@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-ND-05 &mdash; Seasonal Peak Capacity Planning and Surge Preparation
         </h1>
-        <p>Seasonal Peak Capacity Planning and Surge Preparation process for J.B. Hunt Transport Services in Lowell, Arkansas, focusing on optimizing intermodal moves using company-owned 53-foot containers.</p>
+        <p>This process involves planning for seasonal peak capacity needs in J.B. Hunt's intermodal operations to ensure efficient handling of increased loads during high-demand periods.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Network Design &amp; Capacity Planning</td></tr>
             <tr><th>L3 Name</th><td>Seasonal Peak Capacity Planning and Surge Preparation</td></tr>
-            <tr><th>Trigger</th><td>Detection of seasonal demand spikes through forecasting tools integrated with the J.B. Hunt 360 digital freight marketplace.</td></tr>
-            <tr><th>Outcome</th><td>Enhanced capacity planning to meet peak demand periods without compromising safety or operational efficiency.</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span> <span class="sys-tag trimble">Trimble TMT Fleet Maintenance</span> <span class="sys-tag settlement">TriumphPay</span></td></tr>
+            <tr><th>Trigger</th><td>Detection of seasonal demand spikes through historical data analysis and market trends.</td></tr>
+            <tr><th>Outcome</th><td>Preparedness for increased load volumes with optimized network design, capacity allocation, and surge response strategies.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span> <span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag trimble">Trimble TruckMate</span> <span class="sys-tag cloud">Microsoft Power BI</span></td></tr>
           </table>
         </div>
       </div>
@@ -782,34 +782,34 @@
           <td>Demand Forecasting</td>
           <td>Load Planner</td>
           <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Historical data, market trends, seasonal patterns</td>
+          <td>Historical data, market trends</td>
           <td>Seasonal demand forecast report</td>
           <td>Accuracy of demand forecast within ±5%</td>
-          <td>Inaccurate forecasting leading to over or under-provisioning of resources.</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Inaccurate forecasts leading to over or under-provisioning</td>
+          <td>N</td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.2</td>
-          <td>Capacity Assessment</td>
+          <td>Network Design Review</td>
           <td>Fleet Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Current fleet capacity, maintenance schedules, driver availability</td>
-          <td>Capacity assessment report</td>
-          <td>Available capacity above 80% during peak periods</td>
-          <td>Insufficient capacity to meet demand spikes.</td>
+          <td><span class="sys-tag trimble">PC*MILER, Rand McNally IntelliRoute</span></td>
+          <td>Seasonal demand forecast report</td>
+          <td>Optimized network design plan</td>
+          <td>Network utilization rate above 85%</td>
+          <td>Inefficient network design leading to increased costs</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.3</td>
-          <td>Resource Allocation</td>
-          <td>Dispatcher</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Capacity assessment report, demand forecast report</td>
-          <td>Resource allocation plan</td>
+          <td>Capacity Allocation Planning</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
+          <td>Optimized network design plan</td>
+          <td>Capacity allocation matrix</td>
           <td>On-time delivery above 97%</td>
-          <td>Overloading or underutilization of resources.</td>
+          <td>Over-allocation causing delays</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
@@ -817,107 +817,107 @@
           <td class="step-num">1.4</td>
           <td>Driver Training and Scheduling</td>
           <td>Driver Manager</td>
-          <td><span class="sys-tag jbh360">Samsara, J.B. Hunt 360</span></td>
-          <td>Resource allocation plan, driver availability</td>
-          <td>Driver schedule and training needs report</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
+          <td>Capacity allocation matrix</td>
+          <td>Training schedule and driver assignments</td>
           <td>Driver turnover below 15%</td>
-          <td>High driver turnover during peak periods.</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Insufficient training leading to safety incidents</td>
           <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.5</td>
-          <td>Safety Compliance Review</td>
-          <td>Safety Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Samsara</span></td>
-          <td>Driver schedule and training needs report</td>
-          <td>Safety compliance checklist</td>
-          <td>CSA BASIC percentile below 5%</td>
-          <td>Non-compliance with safety regulations.</td>
+          <td>Equipment Readiness Check</td>
+          <td>Shop Foreman</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TruckMate</span></td>
+          <td>Driver assignments</td>
+          <td>Equipment readiness report</td>
+          <td>PM compliance rate above 95%</td>
+          <td>Equipment failures due to poor maintenance</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>DOT Compliance Check</td>
-          <td>DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Samsara</span></td>
-          <td>Driver schedule and training needs report</td>
-          <td>DOT compliance status report</td>
-          <td>Compliance rate with DOT regulations above 98%</td>
-          <td>Non-compliance with DOT requirements.</td>
+          <td>Surge Response Strategy Development</td>
+          <td>Load Planner, Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Rand McNally IntelliRoute</span></td>
+          <td>Equipment readiness report</td>
+          <td>Surge response plan</td>
+          <td>Empty mile percentage below 12%</td>
+          <td>Inefficient use of assets leading to increased empty miles</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.7</td>
-          <td>Equipment Maintenance Planning</td>
-          <td>Diesel Technician, Shop Foreman</td>
-          <td><span class="sys-tag jbh360">Trimble TMT Fleet Maintenance, J.B. Hunt 360</span></td>
-          <td>Resource allocation plan, equipment status</td>
-          <td>Maintenance schedule and parts order list</td>
-          <td>PM compliance rate above 95%</td>
-          <td>Equipment downtime during peak periods.</td>
+          <td>Regulatory Compliance Review</td>
+          <td>DOT Compliance Specialist</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod PowerBroker</span></td>
+          <td>Surge response plan</td>
+          <td>Compliance checklist and action items</td>
+          <td>CSA BASIC percentile below 15%</td>
+          <td>Non-compliance with DOT regulations leading to fines</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.8</td>
-          <td>Vendor Coordination</td>
-          <td>Fleet Manager, Load Planner</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Resource allocation plan, vendor contracts</td>
-          <td>Vendor coordination report</td>
-          <td>On-time delivery above 97%</td>
-          <td>Coordination issues with vendors during peak periods.</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Communication Plan Development</td>
+          <td>Terminal Manager, Ramp Operations Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Microsoft Power BI</span></td>
+          <td>Compliance checklist and action items</td>
+          <td>Internal communication plan</td>
+          <td>Driver satisfaction score above 85%</td>
+          <td>Poor communication leading to operational disruptions</td>
           <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.9</td>
-          <td>Financial Planning</td>
-          <td>Account Manager, Pricing Analyst</td>
-          <td><span class="sys-tag jbh360">TriumphPay, J.B. Hunt 360</span></td>
-          <td>Resource allocation plan, cost analysis</td>
-          <td>Financial plan and budget report</td>
-          <td>Revenue per loaded mile above $1.50</td>
-          <td>Inadequate financial planning leading to losses.</td>
+          <td>Resource Allocation for Surge</td>
+          <td>Fleet Manager, Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
+          <td>Internal communication plan</td>
+          <td>Surge resource allocation schedule</td>
+          <td>Revenue per loaded mile above $1.25/mile</td>
+          <td>Inefficient resource allocation leading to reduced profitability</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.10</td>
-          <td>Communication Plan Development</td>
-          <td>Terminal Manager, Ramp Operations Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Samsara</span></td>
-          <td>Resource allocation plan, communication protocols</td>
-          <td>Communication plan and training materials</td>
-          <td>Effective communication rate above 95%</td>
-          <td>Poor communication leading to operational disruptions.</td>
+          <td>Final Review and Approval</td>
+          <td>Fleet Manager, Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Surge resource allocation schedule</td>
+          <td>Approved surge plan</td>
+          <td>Operational ratio above 80%</td>
+          <td>Inadequate planning leading to operational inefficiencies</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.11</td>
-          <td>Driver Recruitment and Training</td>
-          <td>Driver Recruiter, Safety Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Samsara</span></td>
-          <td>Driver schedule and training needs report</td>
-          <td>Recruitment plan and training program</td>
-          <td>Driver turnover below 15%</td>
-          <td>Difficulty in recruiting sufficient drivers.</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Execution of Surge Plan</td>
+          <td>Dispatcher, Driver Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
+          <td>Approved surge plan</td>
+          <td>Operational execution report</td>
+          <td>On-time delivery above 97%</td>
+          <td>Execution delays leading to missed deadlines</td>
           <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.12</td>
-          <td>Final Review and Execution</td>
+          <td>Post-Surge Review and Analysis</td>
           <td>Fleet Manager, Load Planner</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>All previous reports and plans</td>
-          <td>Execution plan and timeline</td>
-          <td>On-time delivery above 97%</td>
-          <td>Inadequate final review leading to operational failures.</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Microsoft Power BI</span></td>
+          <td>Operational execution report</td>
+          <td>Post-surge review report</td>
+          <td>Detention hours per load below 1 hour</td>
+          <td>Excessive detention times leading to increased costs</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97%</span> <span class="kpi-pill">Empty mile percentage below 12%</span> <span class="kpi-pill">Revenue per loaded mile above $1.50</span> <span class="kpi-pill">Operating ratio above 80%</span> <span class="kpi-pill">Driver turnover below 15%</span> <span class="kpi-pill">CSA BASIC percentile below 5%</span> <span class="kpi-pill">PM compliance rate above 95%</span> <span class="kpi-pill">Detention hours per load below 4 hours</span> <span class="kpi-pill">Box turns per year above 20,000</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97%</span> <span class="kpi-pill">Empty mile percentage below 12%</span> <span class="kpi-pill">Revenue per loaded mile above $1.25/mile</span> <span class="kpi-pill">Operational ratio above 80%</span> <span class="kpi-pill">Driver turnover below 15%</span> <span class="kpi-pill">CSA BASIC percentile below 15%</span> <span class="kpi-pill">PM compliance rate above 95%</span> <span class="kpi-pill">Detention hours per load below 1 hour</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Non-compliance with DOT regulations leading to fines and penalties</span> <span class="risk-pill">Equipment downtime during peak periods affecting on-time deliveries</span> <span class="risk-pill">Coordination issues with vendors causing delays</span> <span class="risk-pill">Inadequate financial planning resulting in operational losses</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2, 1.7</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.3</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver Manager &middot; 1.4</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.6</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Diesel Technician &middot; 1.7</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Shop Foreman &middot; 1.7</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Account Manager &middot; 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Pricing Analyst &middot; 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Terminal Manager &middot; 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Ramp Operations Manager &middot; 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver Recruiter &middot; 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.11</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Non-compliance with DOT regulations leading to fines</span> <span class="risk-pill">Poor communication leading to operational disruptions</span> <span class="risk-pill">Excessive detention times leading to increased costs</span> <span class="risk-pill">Inefficient use of assets leading to increased empty miles</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3, 1.6, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2, 1.5, 1.7, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver Manager &middot; 1.4, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Shop Foreman &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.7</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Terminal Manager, Ramp Operations Manager &middot; 1.8</span></div>
         </div>
       </div>
 

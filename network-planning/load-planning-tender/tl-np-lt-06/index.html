@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-LT-06 &mdash; Weight and Cargo Securement Planning under 49 CFR 393 Subpart I
         </h1>
-        <p>This process involves planning the weight distribution and cargo securement for intermodal moves to ensure compliance with 49 CFR 393 Subpart I regulations.</p>
+        <p>This process involves planning the weight and securement of cargo for intermodal moves to ensure compliance with 49 CFR 393 Subpart I regulations.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Load Planning &amp; Tender Management</td></tr>
             <tr><th>L3 Name</th><td>Weight and Cargo Securement Planning under 49 CFR 393 Subpart I</td></tr>
-            <tr><th>Trigger</th><td>Initiation of a new load plan for an intermodal move involving company-owned 53-foot containers on BNSF in the west and Norfolk Southern in the east.</td></tr>
-            <tr><th>Outcome</th><td>Successful completion ensures that all loads are properly secured, weight is distributed evenly, and all regulatory requirements are met, leading to safe transportation.</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
+            <tr><th>Trigger</th><td>Initiated by a Load Planner upon receiving a new load request or when an existing load's details are updated.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion ensures that all loads are properly weighed and secured, minimizing the risk of accidents and ensuring compliance with federal regulations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
           </table>
         </div>
       </div>
@@ -779,147 +779,147 @@
               <tbody>
         <tr>
           <td class="step-num">1.1</td>
-          <td>Load Plan Creation</td>
+          <td>Load Details Review</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Customer order details</td>
-          <td>Load plan with weight distribution and securement requirements</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Load request details</td>
+          <td>Load plan with initial weight and securement notes</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Inaccurate load planning leading to potential re-planning</td>
+          <td>Inaccurate load data leading to improper planning</td>
           <td>N</td>
-          <td>N</td>
-        </tr>
-        <tr>
-          <td class="step-num">1.2</td>
-          <td>Weight Distribution Review</td>
-          <td>Safety Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Load plan with weight distribution</td>
-          <td>Approved load plan with adjusted weights if necessary</td>
-          <td>Empty mile percentage below 12 percent</td>
-          <td>Overweight loads leading to fines and delays</td>
-          <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
+          <td class="step-num">1.2</td>
+          <td>Weight Verification</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag trimble">PC*MILER</span></td>
+          <td>Load plan with initial weight and securement notes</td>
+          <td>Verified load weights</td>
+          <td>Empty mile percentage below 12 percent</td>
+          <td>Manual weight verification errors</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
           <td class="step-num">1.3</td>
-          <td>Cargo Securement Planning</td>
+          <td>Securement Plan Development</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Approved load plan with weight distribution</td>
-          <td>Securement plan detailing tie-downs and lashings</td>
-          <td>CSA BASIC percentile below 5 percent</td>
-          <td>Improper securement leading to cargo damage</td>
-          <td>N</td>
-          <td>N</td>
+          <td><span class="sys-tag custom">Rand McNally IntelliRoute</span></td>
+          <td>Verified load weights</td>
+          <td>Detailed securement plan</td>
+          <td>Driver turnover below 20 percent</td>
+          <td>Inadequate securement plans leading to cargo damage</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.4</td>
           <td>Securement Plan Review</td>
           <td>Safety Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Securement plan</td>
-          <td>Approved securement plan with adjustments if necessary</td>
-          <td>Driver turnover below 20 percent</td>
-          <td>Non-compliance leading to driver retraining</td>
-          <td><span class="decision-y">Y</span></td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Detailed securement plan</td>
+          <td>Approved securement plan</td>
+          <td>CSA BASIC percentile below 25 percent</td>
+          <td>Non-compliance with 49 CFR 393 Subpart I</td>
+          <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.5</td>
-          <td>Load Execution Preparation</td>
+          <td>Load Documentation Update</td>
           <td>Dispatcher</td>
           <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Approved securement plan and load details</td>
-          <td>Dispatch instructions with weight and securement information</td>
+          <td>Approved securement plan</td>
+          <td>Updated load documentation</td>
           <td>Revenue per loaded mile above $1.20</td>
-          <td>Miscommunication leading to delays</td>
+          <td>Missing or incorrect documentation</td>
           <td>N</td>
-          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>Pre-Trip Inspection</td>
-          <td>Driver</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Dispatch instructions and securement plan</td>
-          <td>Pre-trip inspection report with any issues noted</td>
+          <td>Driver Training Notification</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Updated load documentation</td>
+          <td>Training notification to drivers</td>
           <td>PM compliance rate above 95 percent</td>
-          <td>Equipment failure leading to downtime</td>
+          <td>Drivers not informed of new securement procedures</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.7</td>
+          <td>Driver Acknowledgment</td>
+          <td>Driver</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Training notification to drivers</td>
+          <td>Acknowledgment of training receipt</td>
+          <td>Detention hours per load below 1 hour</td>
+          <td>Drivers not acknowledging training</td>
           <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
-          <td class="step-num">1.7</td>
-          <td>Securement Execution</td>
-          <td>Driver</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Pre-trip inspection report and securement plan</td>
-          <td>In-cab video of securement process</td>
-          <td>Detention hours per load below 2 hours</td>
-          <td>Cargo shifting during transit</td>
-          <td>N</td>
-          <td>N</td>
-        </tr>
-        <tr>
           <td class="step-num">1.8</td>
-          <td>Post-Trip Inspection</td>
-          <td>Driver</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>In-cab video of securement process</td>
-          <td>Post-trip inspection report with any issues noted</td>
-          <td>Operating ratio above 85 percent</td>
-          <td>Equipment damage leading to repair costs</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Load Dispatch</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Acknowledgment of training receipt</td>
+          <td>Dispatched load with securement plan</td>
+          <td>Box turns per year above 15,000</td>
+          <td>Incorrect dispatch leading to delays</td>
+          <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.9</td>
-          <td>Securement Review and Documentation</td>
-          <td>Safety Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Post-trip inspection report</td>
-          <td>Securement review documentation with any necessary adjustments</td>
-          <td>Box turns per year above 50,000</td>
-          <td>Lack of securement documentation leading to compliance issues</td>
-          <td>N</td>
+          <td>Route Optimization</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag trimble">PC*MILER</span></td>
+          <td>Dispatched load with securement plan</td>
+          <td>Optimized route for the load</td>
+          <td>On-time delivery above 97 percent</td>
+          <td>Suboptimal routes leading to increased travel time</td>
+          <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.10</td>
-          <td>Securement Training Review</td>
+          <td>Final Securement Check</td>
           <td>Safety Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Securement review documentation</td>
-          <td>Training plan for drivers with any necessary updates</td>
-          <td>Driver turnover below 20 percent</td>
-          <td>Inadequate training leading to driver errors</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Optimized route for the load</td>
+          <td>Final securement check completed</td>
+          <td>Empty mile percentage below 12 percent</td>
+          <td>Missed final checks leading to cargo issues</td>
           <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.11</td>
-          <td>Securement Plan Update</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Training plan for drivers</td>
-          <td>Updated securement plan based on training needs</td>
-          <td>Revenue per loaded mile above $1.20</td>
-          <td>Outdated securement plans leading to inefficiencies</td>
+          <td>Load Departure Confirmation</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Final securement check completed</td>
+          <td>Load departure confirmation</td>
+          <td>Driver turnover below 20 percent</td>
+          <td>Loads departing without final checks</td>
           <td>N</td>
-          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.12</td>
-          <td>Securement Plan Approval</td>
+          <td>Post-Dispatch Review</td>
           <td>Safety Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Updated securement plan</td>
-          <td>Approved securement plan for future loads</td>
-          <td>CSA BASIC percentile below 5 percent</td>
-          <td>Non-compliance leading to regulatory action</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Load departure confirmation</td>
+          <td>Post-dispatch review report</td>
+          <td>CSA BASIC percentile below 25 percent</td>
+          <td>No follow-up on dispatched loads</td>
           <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
               </tbody>
             </table>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.20</span> <span class="kpi-pill">CSA BASIC percentile below 5 percent</span> <span class="kpi-pill">Driver turnover below 20 percent</span> <span class="kpi-pill">PM compliance rate above 95 percent</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Operating ratio above 85 percent</span> <span class="kpi-pill">Box turns per year above 50,000</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.20</span> <span class="kpi-pill">Driver turnover below 20 percent</span> <span class="kpi-pill">CSA BASIC percentile below 25 percent</span> <span class="kpi-pill">PM compliance rate above 95 percent</span> <span class="kpi-pill">Detention hours per load below 1 hour</span> <span class="kpi-pill">Box turns per year above 15,000</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Overweight loads leading to fines and delays</span> <span class="risk-pill">Improper securement leading to cargo damage</span> <span class="risk-pill">Equipment failure leading to downtime</span> <span class="risk-pill">Lack of securement documentation leading to compliance issues</span> <span class="risk-pill">Inadequate training leading to driver errors</span> <span class="risk-pill">Outdated securement plans leading to inefficiencies</span> <span class="risk-pill">Non-compliance leading to regulatory action</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3, 1.5, 1.9, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.2, 1.4, 1.8, 1.10, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver &middot; 1.6, 1.7, 1.8</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Non-compliance with 49 CFR 393 Subpart I leading to fines and penalties</span> <span class="risk-pill">Cargo damage due to improper securement</span> <span class="risk-pill">Driver training not being acknowledged, leading to operational risks</span> <span class="risk-pill">Suboptimal routes causing increased travel time and costs</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3, 1.5, 1.7, 1.9, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.2, 1.4, 1.6, 1.8, 1.10, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.5, 1.7, 1.8, 1.11</span></div>
         </div>
       </div>
 

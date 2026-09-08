@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-ND-01 &mdash; Lane Network Design and Freight Flow Balancing
         </h1>
-        <p>This process involves designing lane networks and balancing freight flows to optimize asset utilization and improve service levels for J.B. Hunt Transport Services in the Lowell, Arkansas operation.</p>
+        <p>This process involves designing lane networks and balancing freight flow for J.B. Hunt Transport Services' intermodal operations in Lowell, Arkansas.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Network Design &amp; Capacity Planning</td></tr>
             <tr><th>L3 Name</th><td>Lane Network Design and Freight Flow Balancing</td></tr>
-            <tr><th>Trigger</th><td>Quarterly review of network performance metrics or changes in market demand</td></tr>
-            <tr><th>Outcome</th><td>Optimized lane network design that maximizes capacity utilization and reduces empty miles while ensuring on-time deliveries.</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span> <span class="sys-tag trimble">Trimble TMT Fleet Maintenance</span> <span class="sys-tag telematics">Lytx DriveCam</span></td></tr>
+            <tr><th>Trigger</th><td>Monthly demand forecast update from Sales and Marketing teams</td></tr>
+            <tr><th>Outcome</th><td>Optimized lane network design with balanced freight flow across BNSF and Norfolk Southern rail lines</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
           </table>
         </div>
       </div>
@@ -779,145 +779,145 @@
               <tbody>
         <tr>
           <td class="step-num">1.1</td>
-          <td>Data Collection</td>
+          <td>Demand Forecast Analysis</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Historical load data, current market demand forecasts</td>
-          <td>Lane network design report</td>
-          <td>On-time delivery above 97 percent</td>
-          <td>Inaccurate demand forecasting leading to inefficient lane utilization</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Monthly demand forecast report</td>
+          <td>Demand analysis report</td>
+          <td>Forecast accuracy above 95%</td>
+          <td>Inaccurate demand forecasts leading to over/under capacity</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.2</td>
-          <td>Network Analysis</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster, PC*MILER</span></td>
-          <td>Lane network design report</td>
-          <td>Optimized lane network map</td>
-          <td>Empty mile percentage below 12 percent</td>
-          <td>Overlooking potential bottlenecks in the network</td>
+          <td>Network Design Review</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag trimble">PC*MILER</span></td>
+          <td>Demand analysis report</td>
+          <td>Initial network design proposal</td>
+          <td>Network efficiency improvement by 5%</td>
+          <td>Inefficient network design leading to higher transportation costs</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.3</td>
           <td>Capacity Planning</td>
-          <td>Fleet Manager</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Optimized lane network map</td>
-          <td>Capacity allocation plan</td>
-          <td>Revenue per loaded mile above $1.20/mile</td>
-          <td>Miscalculating the required capacity leading to either over or underutilization</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag custom">Rand McNally IntelliRoute</span></td>
+          <td>Initial network design proposal</td>
+          <td>Capacity plan with lane utilization rates</td>
+          <td>Lane utilization rate above 70%</td>
+          <td>Underutilized lanes leading to higher empty mile costs</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Regulatory Compliance Check</td>
+          <td>DOT Compliance Specialist</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Capacity plan with lane utilization rates</td>
+          <td>Compliance report</td>
+          <td>Compliance rate above 98%</td>
+          <td>Regulatory non-compliance leading to fines and penalties</td>
           <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
-          <td class="step-num">1.4</td>
-          <td>Driver Scheduling</td>
-          <td>Dispatcher</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Capacity allocation plan</td>
-          <td>Driver schedule</td>
-          <td>CSA BASIC percentile below 20 percent</td>
-          <td>Improper scheduling leading to driver fatigue or excessive idle time</td>
-          <td>N</td>
-          <td><span class="exception-y">Y</span></td>
-        </tr>
-        <tr>
           <td class="step-num">1.5</td>
-          <td>Vehicle Maintenance Planning</td>
-          <td>Diesel Technician, Shop Foreman</td>
-          <td><span class="sys-tag jbh360">Trimble TMT Fleet Maintenance, J.B. Hunt 360</span></td>
-          <td>Driver schedule</td>
-          <td>Maintenance plan</td>
-          <td>PM compliance rate above 95 percent</td>
-          <td>Neglecting maintenance leading to unexpected downtime</td>
+          <td>Safety Audit Review</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Compliance report</td>
+          <td>Safety audit report</td>
+          <td>CSA BASIC percentile below 10%</td>
+          <td>High CSA BASIC scores leading to increased scrutiny</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>Safety Audit Review</td>
-          <td>Safety Manager</td>
-          <td><span class="sys-tag jbh360">Samsara, J.B. Hunt 360</span></td>
-          <td>Driver schedule, maintenance plan</td>
+          <td>Final Network Design Approval</td>
+          <td>Terminal Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
           <td>Safety audit report</td>
-          <td>Detention hours per load below 2 hours</td>
-          <td>Overlooking safety violations that could lead to accidents</td>
+          <td>Approved network design document</td>
+          <td>On-time delivery above 97%</td>
+          <td>Delays in network implementation leading to missed service levels</td>
           <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.7</td>
-          <td>Regulatory Compliance Check</td>
-          <td>DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Lytx DriveCam</span></td>
-          <td>Safety audit report</td>
-          <td>Compliance status report</td>
-          <td>Driver turnover below 15 percent</td>
-          <td>Non-compliance with regulations leading to fines or penalties</td>
+          <td>Implementation Plan Development</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Approved network design document</td>
+          <td>Implementation plan with timelines and responsibilities</td>
+          <td>Empty mile percentage below 12%</td>
+          <td>Improper implementation leading to inefficiencies</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.8</td>
-          <td>Load Allocation</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Compliance status report</td>
-          <td>Load allocation plan</td>
-          <td>Box turns per year above 1500</td>
-          <td>Poor load allocation leading to inefficient use of assets</td>
+          <td>Training and Communication</td>
+          <td>Driver Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Implementation plan with timelines and responsibilities</td>
+          <td>Training materials and communication plan</td>
+          <td>Driver turnover rate below 15%</td>
+          <td>High driver turnover leading to operational disruptions</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.9</td>
-          <td>Driver Training Needs Assessment</td>
-          <td>Driver Recruiter, Safety Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Lytx DriveCam</span></td>
-          <td>Load allocation plan</td>
-          <td>Training needs report</td>
-          <td>On-time delivery above 97 percent</td>
-          <td>Lack of adequate training leading to operational inefficiencies</td>
+          <td>Network Implementation</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag trimble">PC*MILER</span></td>
+          <td>Training materials and communication plan</td>
+          <td>Implemented network design</td>
+          <td>Revenue per loaded mile above $1.50</td>
+          <td>Poor implementation leading to reduced revenue</td>
           <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.10</td>
-          <td>Training Implementation</td>
-          <td>Driver Recruiter, Safety Manager</td>
-          <td><span class="sys-tag jbh360">Schneider National Academy, J.B. Hunt 360</span></td>
-          <td>Training needs report</td>
-          <td>Training completion certificates</td>
-          <td>CSA BASIC percentile below 20 percent</td>
-          <td>Inadequate training implementation leading to continued safety issues</td>
+          <td>Post-Implementation Review</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Implemented network design</td>
+          <td>Post-implementation review report</td>
+          <td>Network efficiency improvement by 10%</td>
+          <td>Lack of continuous improvement leading to declining performance</td>
+          <td><span class="decision-y">Y</span></td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.11</td>
-          <td>Network Optimization Review</td>
-          <td>Load Planner, Fleet Manager</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Training completion certificates</td>
-          <td>Optimized network design report</td>
-          <td>Revenue per loaded mile above $1.20/mile</td>
-          <td>Neglecting to review and optimize the network leading to suboptimal performance</td>
+          <td>Continuous Improvement Plan</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Post-implementation review report</td>
+          <td>Continuous improvement plan</td>
+          <td>Detention hours per load below 2 hours</td>
+          <td>High detention times leading to increased costs and delays</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.12</td>
-          <td>Implementation of Optimized Network</td>
-          <td>Load Planner, Dispatcher</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Optimized network design report</td>
-          <td>Updated lane network and schedules</td>
-          <td>Empty mile percentage below 12 percent</td>
-          <td>Poor implementation leading to continued inefficiencies</td>
+          <td>Feedback Loop Integration</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Continuous improvement plan</td>
+          <td>Integrated feedback loop for ongoing optimization</td>
+          <td>Box turns per year above 150,000</td>
+          <td>Lack of feedback integration leading to stagnation</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.20/mile</span> <span class="kpi-pill">CSA BASIC percentile below 20 percent</span> <span class="kpi-pill">PM compliance rate above 95 percent</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Driver turnover below 15 percent</span> <span class="kpi-pill">Box turns per year above 1500</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97%</span> <span class="kpi-pill">Empty mile percentage below 12%</span> <span class="kpi-pill">Revenue per loaded mile above $1.50</span> <span class="kpi-pill">Operating ratio above 80%</span> <span class="kpi-pill">Driver turnover rate below 15%</span> <span class="kpi-pill">CSA BASIC percentile below 10%</span> <span class="kpi-pill">PM compliance rate above 95%</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Box turns per year above 150,000</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Inaccurate demand forecasting leading to inefficient lane utilization</span> <span class="risk-pill">Overlooking potential bottlenecks in the network</span> <span class="risk-pill">Neglecting maintenance leading to unexpected downtime</span> <span class="risk-pill">Lack of adequate training leading to operational inefficiencies</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.2, 1.3, 1.8, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.3, 1.5, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.4, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Diesel Technician &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Shop Foreman &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.6, 1.9, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.7</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Regulatory non-compliance leading to fines and penalties</span> <span class="risk-pill">High CSA BASIC scores leading to increased scrutiny</span> <span class="risk-pill">Poor implementation leading to reduced revenue</span> <span class="risk-pill">Lack of continuous improvement leading to declining performance</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3, 1.5, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2, 1.6, 1.8, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.4</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.5, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.7, 1.12</span></div>
         </div>
       </div>
 

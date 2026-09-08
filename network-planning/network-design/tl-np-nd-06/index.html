@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-ND-06 &mdash; Fleet Size and Mix Modelling for Tractors and Trailers
         </h1>
-        <p>This process involves modeling the fleet size and mix for tractors and trailers to optimize network capacity and efficiency at J.B. Hunt Transport Services in Lowell, Arkansas.</p>
+        <p>This process involves modeling the fleet size and mix for tractors and trailers at J.B. Hunt Transport Services in Lowell, Arkansas, focusing on intermodal moves using company-owned 53-foot containers on BNSF and Norfolk Southern railroads.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Network Design &amp; Capacity Planning</td></tr>
             <tr><th>L3 Name</th><td>Fleet Size and Mix Modelling for Tractors and Trailers</td></tr>
-            <tr><th>Trigger</th><td>Annual review of fleet performance metrics and changes in demand patterns</td></tr>
-            <tr><th>Outcome</th><td>Optimized fleet size and mix that meets operational needs while minimizing costs and maximizing efficiency</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span> <span class="sys-tag oracle">Oracle Transportation Management</span> <span class="sys-tag trimble">Trimble TMW Suite</span> <span class="sys-tag telematics">Lytx DriveCam</span></td></tr>
+            <tr><th>Trigger</th><td>Quarterly review of network performance and capacity planning needs.</td></tr>
+            <tr><th>Outcome</th><td>Optimized fleet size and mix to meet demand efficiently while maintaining safety standards and regulatory compliance.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
           </table>
         </div>
       </div>
@@ -779,145 +779,145 @@
               <tbody>
         <tr>
           <td class="step-num">1.1</td>
-          <td>Data Collection</td>
-          <td>Fleet Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster, Samsara</span></td>
-          <td>Historical load data, current fleet utilization reports</td>
-          <td>Aggregated fleet performance report</td>
+          <td>Data Collection and Analysis</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Historical load data, current network demand, and rail capacity information.</td>
+          <td>Demand forecast report for the next quarter.</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Inaccurate or incomplete data leading to flawed modeling</td>
+          <td>Inaccurate demand forecasting leading to over or under-provisioning of fleet.</td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.2</td>
-          <td>Demand Analysis</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
-          <td>Aggregated fleet performance report</td>
-          <td>Demand forecast and analysis report</td>
-          <td>Revenue per loaded mile above $1.50/mile</td>
-          <td>Overestimating or underestimating demand can lead to inefficient fleet sizing</td>
+          <td>Fleet Size Determination</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag trimble">PC*MILER</span></td>
+          <td>Demand forecast report, current fleet inventory, and operational parameters.</td>
+          <td>Recommended fleet size for tractors and trailers.</td>
+          <td>Empty mile percentage below 12 percent</td>
+          <td>Balancing fleet utilization to minimize empty miles without compromising service levels.</td>
           <td><span class="decision-y">Y</span></td>
-          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.3</td>
-          <td>Fleet Mix Evaluation</td>
-          <td>Fleet Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster, Samsara</span></td>
-          <td>Demand forecast and analysis report</td>
-          <td>Recommended fleet mix proposal</td>
-          <td>Empty mile percentage below 12 percent</td>
-          <td>Improper fleet mix can lead to increased empty miles</td>
+          <td>Tractor and Trailer Mix Analysis</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag custom">Rand McNally IntelliRoute</span></td>
+          <td>Recommended fleet size, operational requirements, and cost considerations.</td>
+          <td>Optimized tractor and trailer mix proposal.</td>
+          <td>Revenue per loaded mile above $1.50</td>
+          <td>Selecting the right mix of tractors and trailers to maximize revenue while ensuring compliance with regulations.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.4</td>
-          <td>Regulatory Compliance Check</td>
+          <td>Regulatory Compliance Review</td>
           <td>DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
-          <td>Recommended fleet mix proposal</td>
-          <td>Compliance report with regulatory requirements</td>
-          <td>CSA BASIC percentile below 25th percentile</td>
-          <td>Non-compliance with regulations can lead to fines and penalties</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Optimized fleet size and mix proposal, current regulatory requirements.</td>
+          <td>Compliance report with recommendations for any necessary adjustments.</td>
+          <td>CSA BASIC percentile below 15 percent</td>
+          <td>Ensuring the fleet size and mix comply with federal regulations such as 49 CFR Part 382 and 49 CFR Part 390.</td>
           <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.5</td>
-          <td>Cost Analysis</td>
-          <td>Pricing Analyst</td>
-          <td><span class="sys-tag jbh360">Oracle Transportation Management, J.B. Hunt 360</span></td>
-          <td>Recommended fleet mix proposal, compliance report</td>
-          <td>Cost analysis and budgeting report</td>
-          <td>Operating ratio below 85 percent</td>
-          <td>Budget overruns due to inaccurate cost estimations</td>
+          <td>Safety Assessment</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Optimized fleet size and mix proposal, safety records of current fleet.</td>
+          <td>Safety assessment report with recommendations for improvements.</td>
+          <td>Driver turnover below 10 percent per year</td>
+          <td>Maintaining a safe operating environment to reduce driver turnover and improve safety performance.</td>
+          <td><span class="decision-y">Y</span></td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>Driver Training Needs Assessment</td>
-          <td>Safety Manager</td>
-          <td><span class="sys-tag telematics">Samsara, Lytx DriveCam</span></td>
-          <td>Cost analysis and budgeting report</td>
-          <td>Training needs assessment report</td>
-          <td>Driver turnover below 15 percent</td>
-          <td>High driver turnover can lead to operational disruptions</td>
+          <td>Budgeting and Cost Analysis</td>
+          <td>Pricing Analyst</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Optimized fleet size and mix proposal, current budget, and cost data.</td>
+          <td>Cost analysis report with proposed budget adjustments.</td>
+          <td>Operating ratio below 120 percent</td>
+          <td>Balancing the need for fleet expansion with available budget to ensure financial sustainability.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.7</td>
-          <td>Final Fleet Mix Approval</td>
-          <td>Fleet Manager, Account Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Oracle Transportation Management</span></td>
-          <td>Training needs assessment report</td>
-          <td>Approved fleet mix plan</td>
+          <td>Implementation Plan Development</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Optimized fleet size and mix proposal, safety assessment report, cost analysis report.</td>
+          <td>Detailed implementation plan with timelines and responsibilities.</td>
           <td>Detention hours per load below 2 hours</td>
-          <td>Excessive detention times can lead to increased costs and delays</td>
-          <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
-        </tr>
-        <tr>
-          <td class="step-num">1.8</td>
-          <td>Fleet Acquisition Planning</td>
-          <td>Driver Recruiter, Fleet Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
-          <td>Approved fleet mix plan</td>
-          <td>Fleet acquisition schedule and budget</td>
-          <td>Box turns per year above 500,000</td>
-          <td>Delays in acquiring new equipment can impact operational readiness</td>
+          <td>Ensuring smooth transition of the new fleet mix without disrupting operations.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
+          <td class="step-num">1.8</td>
+          <td>Training and Communication Plan</td>
+          <td>Driver Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Implementation plan, safety assessment report.</td>
+          <td>Training and communication plan for drivers and operations team.</td>
+          <td>Box turns per year above 250,000</td>
+          <td>Effective training to ensure new fleet mix is operated safely and efficiently.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
           <td class="step-num">1.9</td>
-          <td>Implementation Plan Development</td>
-          <td>Fleet Manager, Dispatcher</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Fleet acquisition schedule and budget</td>
-          <td>Fleet implementation plan</td>
+          <td>Fleet Acquisition and Deployment</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Implementation plan, training and communication plan.</td>
+          <td>Acquisition orders for new tractors and trailers, deployment schedule.</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Poorly planned implementation can lead to service disruptions</td>
+          <td>Timely acquisition and deployment of the new fleet to meet demand.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.10</td>
-          <td>Training and Deployment</td>
-          <td>Driver Manager, Safety Manager</td>
-          <td><span class="sys-tag telematics">Samsara, Lytx DriveCam</span></td>
-          <td>Fleet implementation plan</td>
-          <td>Completed training sessions and deployment logs</td>
-          <td>CSA BASIC percentile below 25th percentile</td>
-          <td>Inadequate training can lead to safety incidents</td>
-          <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
-        </tr>
-        <tr>
-          <td class="step-num">1.11</td>
           <td>Post-Implementation Review</td>
-          <td>Fleet Manager, Load Planner</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Oracle Transportation Management</span></td>
-          <td>Completed training sessions and deployment logs</td>
-          <td>Post-implementation review report</td>
-          <td>Operating ratio below 85 percent</td>
-          <td>Ongoing issues may require adjustments to the fleet mix</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Deployment schedule, operational data.</td>
+          <td>Post-implementation review report with performance metrics.</td>
+          <td>Empty mile percentage below 12 percent</td>
+          <td>Assessing the effectiveness of the new fleet mix and making necessary adjustments.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
-          <td class="step-num">1.12</td>
+          <td class="step-num">1.11</td>
           <td>Continuous Improvement Plan</td>
-          <td>Fleet Manager, Account Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
-          <td>Post-implementation review report</td>
-          <td>Continuous improvement plan</td>
-          <td>Revenue per loaded mile above $1.50/mile</td>
-          <td>Ignoring continuous improvement can lead to operational inefficiencies</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Post-implementation review report.</td>
+          <td>Continuous improvement plan for ongoing fleet optimization.</td>
+          <td>Revenue per loaded mile above $1.50</td>
+          <td>Identifying areas for continuous improvement to enhance operational efficiency and profitability.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.12</td>
+          <td>Final Approval and Execution</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Continuous improvement plan, final budget approval.</td>
+          <td>Approval for fleet expansion and deployment execution.</td>
+          <td>Operating ratio below 120 percent</td>
+          <td>Securing final approval from management to proceed with the new fleet mix.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.50/mile</span> <span class="kpi-pill">Operating ratio below 85 percent</span> <span class="kpi-pill">Driver turnover below 15 percent</span> <span class="kpi-pill">CSA BASIC percentile below 25th percentile</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Box turns per year above 500,000</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.50</span> <span class="kpi-pill">CSA BASIC percentile below 15 percent</span> <span class="kpi-pill">Driver turnover below 10 percent per year</span> <span class="kpi-pill">Operating ratio below 120 percent</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Box turns per year above 250,000</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Non-compliance with regulations can lead to fines and penalties</span> <span class="risk-pill">Budget overruns due to inaccurate cost estimations</span> <span class="risk-pill">High driver turnover can lead to operational disruptions</span> <span class="risk-pill">Excessive detention times can lead to increased costs and delays</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.1, 1.3, 1.4, 1.6, 1.7, 1.8, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.2, 1.5, 1.10, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.6, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.4</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Pricing Analyst &middot; 1.5, 1.8</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver Recruiter &middot; 1.7, 1.8</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Inaccurate demand forecasting leading to over or under-provisioning of fleet.</span> <span class="risk-pill">Balancing fleet utilization to minimize empty miles without compromising service levels.</span> <span class="risk-pill">Ensuring the fleet size and mix comply with federal regulations such as 49 CFR Part 382 and 49 CFR Part 390.</span> <span class="risk-pill">Maintaining a safe operating environment to reduce driver turnover and improve safety performance.</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2, 1.5, 1.9, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.4</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Pricing Analyst &middot; 1.6</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver Manager &middot; 1.8</span></div>
         </div>
       </div>
 

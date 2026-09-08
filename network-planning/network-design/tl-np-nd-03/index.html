@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-ND-03 &mdash; Headhaul and Backhaul Pairing Analysis
         </h1>
-        <p>This process involves analyzing headhaul and backhaul pairing to optimize network design and capacity planning for J.B. Hunt Transport Services in Lowell, Arkansas.</p>
+        <p>The Headhaul and Backhaul Pairing Analysis process at J.B. Hunt Transport Services in Lowell, Arkansas involves optimizing the pairing of headhaul and backhaul loads to maximize efficiency and reduce empty miles.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Network Design &amp; Capacity Planning</td></tr>
             <tr><th>L3 Name</th><td>Headhaul and Backhaul Pairing Analysis</td></tr>
-            <tr><th>Trigger</th><td>Weekly demand forecast update from the Sales team</td></tr>
-            <tr><th>Outcome</th><td>Optimized headhaul and backhaul pairings that maximize utilization of assets and reduce empty miles.</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
+            <tr><th>Trigger</th><td>Weekly review of intermodal load volumes and carrier capacity reports from J.B. Hunt 360.</td></tr>
+            <tr><th>Outcome</th><td>Optimized headhaul and backhaul pairings that enhance network utilization, reduce empty miles, and improve on-time delivery rates.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span> <span class="sys-tag trimble">Trimble TMW Suite</span></td></tr>
           </table>
         </div>
       </div>
@@ -779,147 +779,147 @@
               <tbody>
         <tr>
           <td class="step-num">1.1</td>
-          <td>Receive Demand Forecast</td>
+          <td>Load Volume Analysis</td>
           <td>Load Planner</td>
           <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Demand forecast from Sales team</td>
-          <td>Updated demand data in J.B. Hunt 360</td>
+          <td>Weekly load volume reports</td>
+          <td>Load volume analysis report</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Inaccurate demand forecasts leading to inefficient asset utilization</td>
+          <td>Inaccurate load data leading to suboptimal pairings.</td>
           <td>N</td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.2</td>
-          <td>Analyze Current Network Design</td>
-          <td>Network Design Specialist</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Current network design data</td>
-          <td>Network analysis report</td>
+          <td>Capacity Review</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Carrier capacity reports</td>
+          <td>Capacity review report</td>
           <td>Empty mile percentage below 12 percent</td>
-          <td>Overlooking potential for better asset utilization</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Overutilized or underutilized carriers affecting network efficiency.</td>
+          <td>N</td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.3</td>
-          <td>Identify Potential Pairings</td>
+          <td>Pairing Strategy Development</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Network analysis report</td>
-          <td>Potential headhaul and backhaul pairings</td>
-          <td>Revenue per loaded mile above $1.20</td>
-          <td>Missed opportunities for revenue optimization</td>
+          <td><span class="sys-tag trimble">PC*MILER, Rand McNally IntelliRoute</span></td>
+          <td>Load volume analysis report, capacity review report</td>
+          <td>Pairing strategy document</td>
+          <td>Revenue per loaded mile above $1.20/mile</td>
+          <td>Complex routing decisions leading to potential inefficiencies.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.4</td>
-          <td>Evaluate Pairings Against Regulations</td>
-          <td>DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Potential pairings</td>
-          <td>Regulatory compliance report</td>
-          <td>CSA BASIC percentile below 5 percent</td>
-          <td>Non-compliance with Hours of Service (HOS) regulations</td>
+          <td>Driver Availability Check</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
+          <td>Pairing strategy document</td>
+          <td>Driver availability report</td>
+          <td>Driver turnover below 15%</td>
+          <td>Unavailability of drivers affecting load execution.</td>
           <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.5</td>
-          <td>Review Pairings for Safety and Maintenance</td>
-          <td>Safety Manager</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Potential pairings, regulatory compliance report</td>
-          <td>Safety and maintenance review report</td>
-          <td>PM compliance rate above 95 percent</td>
-          <td>Neglecting vehicle safety and maintenance</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Load Assignment</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
+          <td>Driver availability report</td>
+          <td>Load assignment document</td>
+          <td>CSA BASIC percentile below 20%</td>
+          <td>Incorrect load assignments leading to safety issues.</td>
           <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>Finalize Pairings</td>
-          <td>Network Design Specialist</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Safety and maintenance review report</td>
-          <td>Finalized headhaul and backhaul pairings</td>
-          <td>Driver turnover below 15 percent</td>
-          <td>Inefficient routing leading to driver dissatisfaction</td>
-          <td>N</td>
+          <td>Hours of Service Compliance Check</td>
+          <td>DOT Compliance Specialist</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
+          <td>Load assignment document</td>
+          <td>HOS compliance report</td>
+          <td>HOS violation rate below 1%</td>
+          <td>Non-compliance with HOS regulations leading to CSA interventions.</td>
+          <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
-          <td class="step-num">2.1</td>
-          <td>Implement Pairings in Load Planning</td>
+          <td class="step-num">1.7</td>
+          <td>Safety Audit Preparation</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
+          <td>HOS compliance report</td>
+          <td>Safety audit checklist</td>
+          <td>PM compliance rate above 95%</td>
+          <td>Lack of safety audits leading to increased risk.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.8</td>
+          <td>Safety Audit Execution</td>
+          <td>Safety Manager, Driver</td>
+          <td><span class="sys-tag trimble">Trimble TMW Suite</span></td>
+          <td>Safety audit checklist</td>
+          <td>Safety audit report</td>
+          <td>Detention hours per load below 2 hours</td>
+          <td>Extended detention times affecting network efficiency.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.9</td>
+          <td>Post-Audit Review</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag jbh360">Trimble TMW Suite, J.B. Hunt 360</span></td>
+          <td>Safety audit report</td>
+          <td>Post-audit review document</td>
+          <td>Box turns per year above 1200</td>
+          <td>Inadequate post-audit reviews leading to recurring issues.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.10</td>
+          <td>Pairing Optimization</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Finalized pairings</td>
-          <td>Updated load plan</td>
+          <td><span class="sys-tag trimble">PC*MILER, Rand McNally IntelliRoute</span></td>
+          <td>Post-audit review document</td>
+          <td>Optimized pairing strategy document</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Incorrect implementation leading to delays</td>
+          <td>Static pairings leading to inefficient network utilization.</td>
+          <td><span class="decision-y">Y</span></td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
-          <td class="step-num">2.2</td>
-          <td>Monitor Pairing Performance</td>
-          <td>Dispatcher</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Updated load plan</td>
-          <td>Performance monitoring report</td>
+          <td class="step-num">1.11</td>
+          <td>Implementation Plan Development</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
+          <td>Optimized pairing strategy document</td>
+          <td>Implementation plan document</td>
+          <td>Revenue per loaded mile above $1.20/mile</td>
+          <td>Lack of a clear implementation plan leading to delays.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.12</td>
+          <td>Implementation and Monitoring</td>
+          <td>Dispatcher, Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Trimble TMW Suite</span></td>
+          <td>Implementation plan document</td>
+          <td>Monitoring report</td>
           <td>Empty mile percentage below 12 percent</td>
-          <td>Lack of real-time performance tracking</td>
+          <td>Poor monitoring leading to untracked inefficiencies.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
-        </tr>
-        <tr>
-          <td class="step-num">2.3</td>
-          <td>Adjust Pairings Based on Performance</td>
-          <td>Network Design Specialist</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Performance monitoring report</td>
-          <td>Adjusted pairings</td>
-          <td>Revenue per loaded mile above $1.20</td>
-          <td>Rigid adherence to initial plans without flexibility</td>
-          <td><span class="decision-y">Y</span></td>
-          <td>N</td>
-        </tr>
-        <tr>
-          <td class="step-num">3.1</td>
-          <td>Review and Document Adjustments</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Adjusted pairings</td>
-          <td>Documentation of adjustments</td>
-          <td>CSA BASIC percentile below 5 percent</td>
-          <td>Lack of documentation leading to accountability issues</td>
-          <td>N</td>
-          <td><span class="exception-y">Y</span></td>
-        </tr>
-        <tr>
-          <td class="step-num">3.2</td>
-          <td>Communicate Adjustments to Stakeholders</td>
-          <td>Carrier Sales Representative</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Documentation of adjustments</td>
-          <td>Stakeholder communication plan</td>
-          <td>Driver turnover below 15 percent</td>
-          <td>Poor communication leading to confusion</td>
-          <td>N</td>
-          <td><span class="exception-y">Y</span></td>
-        </tr>
-        <tr>
-          <td class="step-num">3.3</td>
-          <td>Update Training Programs Based on Adjustments</td>
-          <td>Driver Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Stakeholder communication plan</td>
-          <td>Updated training programs</td>
-          <td>On-time delivery above 97 percent</td>
-          <td>Outdated training materials</td>
-          <td>N</td>
-          <td><span class="exception-y">Y</span></td>
         </tr>
               </tbody>
             </table>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.20</span> <span class="kpi-pill">CSA BASIC percentile below 5 percent</span> <span class="kpi-pill">Driver turnover below 15 percent</span> <span class="kpi-pill">PM compliance rate above 95 percent</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.20/mile</span> <span class="kpi-pill">Driver turnover below 15%</span> <span class="kpi-pill">CSA BASIC percentile below 20%</span> <span class="kpi-pill">HOS violation rate below 1%</span> <span class="kpi-pill">PM compliance rate above 95%</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Box turns per year above 1200</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Incorrect implementation leading to delays</span> <span class="risk-pill">Lack of real-time performance tracking</span> <span class="risk-pill">Rigid adherence to initial plans without flexibility</span> <span class="risk-pill">Poor communication leading to confusion</span> <span class="risk-pill">Outdated training materials</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3, 1.6, 2.1, 3.1</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Network Design Specialist &middot; 1.2, 1.4, 1.5, 2.3, 3.3</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.4</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 2.2</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Carrier Sales Representative &middot; 3.2</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Driver unavailability affecting load execution</span> <span class="risk-pill">Incorrect load assignments leading to safety issues</span> <span class="risk-pill">Lack of safety audits leading to increased risk</span> <span class="risk-pill">Static pairings leading to inefficient network utilization</span> <span class="risk-pill">Poor monitoring leading to untracked inefficiencies</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3, 1.5, 1.9, 1.10, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2, 1.4, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.3, 1.4, 1.5, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.6</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.7, 1.8, 1.9</span></div>
         </div>
       </div>
 

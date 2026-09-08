@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-ND-07 &mdash; Drop-and-Hook Trailer Pool Sizing at Customer Sites
         </h1>
-        <p>This process involves sizing the drop-and-hook trailer pool at customer sites to optimize intermodal operations while ensuring compliance with Federal Motor Carrier Safety Regulations.</p>
+        <p>The Drop-and-Hook Trailer Pool Sizing at Customer Sites process ensures that J.B. Hunt Transport Services optimizes its trailer pool size for intermodal operations to improve efficiency and reduce costs.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Network Design &amp; Capacity Planning</td></tr>
             <tr><th>L3 Name</th><td>Drop-and-Hook Trailer Pool Sizing at Customer Sites</td></tr>
-            <tr><th>Trigger</th><td>Customer site visit or change in demand forecast</td></tr>
-            <tr><th>Outcome</th><td>Optimized trailer pool size that meets operational needs and regulatory requirements, reducing empty miles and improving on-time delivery rates.</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
+            <tr><th>Trigger</th><td>Customer demand analysis and seasonal changes in freight volume.</td></tr>
+            <tr><th>Outcome</th><td>Optimized trailer pool size at customer sites, ensuring efficient drop-and-hook operations with minimal empty miles.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
           </table>
         </div>
       </div>
@@ -779,147 +779,147 @@
               <tbody>
         <tr>
           <td class="step-num">1.1</td>
-          <td>Assess Customer Demand</td>
+          <td>Demand Analysis</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Customer demand data, historical shipment volumes</td>
-          <td>Demand assessment report</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Customer demand data, seasonal trends</td>
+          <td>Demand forecast report</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Inaccurate demand forecasting leading to over or under-provisioning of trailers</td>
+          <td>Inaccurate demand forecasts leading to over or under-provisioning of trailers.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.2</td>
-          <td>Evaluate Current Trailer Pool</td>
+          <td>Trailer Pool Assessment</td>
           <td>Fleet Manager</td>
-          <td><span class="sys-tag jbh360">Samsara, J.B. Hunt 360</span></td>
-          <td>Current trailer pool data, utilization rates</td>
-          <td>Trailer pool evaluation report</td>
+          <td><span class="sys-tag trimble">PC*MILER</span></td>
+          <td>Current trailer pool data, customer site locations</td>
+          <td>Trailer pool assessment report</td>
           <td>Empty mile percentage below 12 percent</td>
-          <td>High empty miles due to inefficient trailer allocation</td>
+          <td>Inefficient trailer utilization leading to increased empty miles.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.3</td>
-          <td>Review Regulatory Requirements</td>
-          <td>DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Regulatory guidelines, safety standards</td>
-          <td>Compliance checklist</td>
-          <td>CSA BASIC percentile below industry average</td>
-          <td>Non-compliance with DOT regulations leading to fines and inspections</td>
+          <td>Capacity Planning</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag custom">Rand McNally IntelliRoute</span></td>
+          <td>Demand forecast, capacity constraints</td>
+          <td>Capacity plan</td>
+          <td>Revenue per loaded mile above $2.50</td>
+          <td>Overcommitting capacity leading to service disruptions.</td>
           <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.4</td>
-          <td>Develop Sizing Proposal</td>
-          <td>Load Planner, Fleet Manager</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Demand assessment report, trailer pool evaluation report, compliance checklist</td>
-          <td>Trailer pool sizing proposal</td>
-          <td>Revenue per loaded mile above industry average</td>
-          <td>Economic inefficiencies due to improper trailer allocation</td>
+          <td>Trailer Sizing Recommendation</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Capacity plan, trailer specifications</td>
+          <td>Trailer sizing recommendation report</td>
+          <td>Driver turnover below 15 percent</td>
+          <td>Inappropriate trailer sizes leading to driver fatigue or equipment damage.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.5</td>
-          <td>Review and Approve Proposal</td>
-          <td>Terminal Manager, Account Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Trailer pool sizing proposal</td>
-          <td>Approved trailer pool size</td>
-          <td>Driver turnover below industry average</td>
-          <td>High driver turnover due to operational inefficiencies</td>
+          <td>Approval for Trailer Sizing</td>
+          <td>Terminal Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Trailer sizing recommendation report</td>
+          <td>Approval document</td>
+          <td>CSA BASIC percentile below 15 percent</td>
+          <td>Non-compliance with CSA standards leading to increased safety risks.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>Implement New Trailer Pool Size</td>
-          <td>Fleet Manager, Dispatcher</td>
-          <td><span class="sys-tag jbh360">Samsara, J.B. Hunt 360</span></td>
-          <td>Approved trailer pool size</td>
-          <td>Updated trailer allocation plan</td>
-          <td>Operating ratio above industry average</td>
-          <td>Operational disruptions due to sudden changes in trailer availability</td>
+          <td>Trailer Acquisition</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Approval document, trailer specifications</td>
+          <td>Purchase order</td>
+          <td>PM compliance rate above 95 percent</td>
+          <td>Delays in acquiring new trailers leading to capacity shortages.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.7</td>
-          <td>Monitor Performance</td>
-          <td>Load Planner, Fleet Manager</td>
-          <td><span class="sys-tag jbh360">Samsara, J.B. Hunt 360</span></td>
-          <td>Operational data, performance metrics</td>
-          <td>Performance monitoring report</td>
-          <td>Detention hours per load below industry average</td>
-          <td>Increased detention times affecting overall efficiency</td>
+          <td>Trailer Deployment</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Purchase order, customer site locations</td>
+          <td>Deployment schedule</td>
+          <td>Detention hours per load below 2 hours</td>
+          <td>Inefficient trailer deployment leading to increased detention times.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.8</td>
-          <td>Adjust as Necessary</td>
-          <td>Load Planner, Fleet Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster, Samsara</span></td>
-          <td>Performance monitoring report</td>
-          <td>Adjusted trailer pool size and allocation plan</td>
-          <td>Box turns per year above industry average</td>
-          <td>Inefficient box handling leading to increased costs</td>
+          <td>Trailer Monitoring</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag trimble">PC*MILER</span></td>
+          <td>Deployment schedule, operational data</td>
+          <td>Operational report</td>
+          <td>Box turns per year above 200</td>
+          <td>Lack of visibility into trailer utilization leading to inefficiencies.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.9</td>
-          <td>Conduct Compliance Audits</td>
-          <td>DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Compliance checklist, audit guidelines</td>
-          <td>Compliance audit report</td>
-          <td>CSA BASIC percentile below industry average</td>
-          <td>Non-compliance with DOT regulations leading to fines and inspections</td>
+          <td>Performance Review</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Operational report, KPIs</td>
+          <td>Performance review report</td>
+          <td>On-time delivery above 97 percent</td>
+          <td>Inadequate performance monitoring leading to continued inefficiencies.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.10</td>
-          <td>Update Documentation</td>
-          <td>Fleet Manager, DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Approved trailer pool size, compliance audit report</td>
-          <td>Updated documentation and records</td>
-          <td>Driver turnover below industry average</td>
-          <td>Outdated documentation leading to operational inefficiencies</td>
-          <td>N</td>
-          <td><span class="exception-y">Y</span></td>
-        </tr>
-        <tr>
-          <td class="step-num">1.11</td>
-          <td>Review and Improve Process</td>
-          <td>Load Planner, Fleet Manager</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Performance monitoring report, compliance audit report</td>
-          <td>Process improvement plan</td>
-          <td>Operating ratio above industry average</td>
-          <td>Operational inefficiencies due to outdated processes</td>
+          <td>Adjustments and Optimization</td>
+          <td>Fleet Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Performance review report, capacity constraints</td>
+          <td>Optimization plan</td>
+          <td>Empty mile percentage below 12 percent</td>
+          <td>Failure to make necessary adjustments leading to continued inefficiencies.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
-          <td class="step-num">1.12</td>
-          <td>Implement Process Improvements</td>
-          <td>Fleet Manager, Dispatcher</td>
-          <td><span class="sys-tag jbh360">Samsara, J.B. Hunt 360</span></td>
-          <td>Process improvement plan</td>
-          <td>Updated process and procedures</td>
-          <td>Detention hours per load below industry average</td>
-          <td>Increased detention times affecting overall efficiency</td>
+          <td class="step-num">1.11</td>
+          <td>Implementation of Adjustments</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Optimization plan, operational data</td>
+          <td>Implementation schedule</td>
+          <td>Revenue per loaded mile above $2.50</td>
+          <td>Delays in implementing adjustments leading to continued inefficiencies.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.12</td>
+          <td>Final Review and Reporting</td>
+          <td>Terminal Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Implementation schedule, KPIs</td>
+          <td>Final review report</td>
+          <td>CSA BASIC percentile below 15 percent</td>
+          <td>Lack of final review leading to unresolved inefficiencies.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
         </tr>
               </tbody>
             </table>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above industry average</span> <span class="kpi-pill">Operating ratio above industry average</span> <span class="kpi-pill">Driver turnover below industry average</span> <span class="kpi-pill">CSA BASIC percentile below industry average</span> <span class="kpi-pill">Detention hours per load below industry average</span> <span class="kpi-pill">Box turns per year above industry average</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $2.50</span> <span class="kpi-pill">Driver turnover below 15 percent</span> <span class="kpi-pill">CSA BASIC percentile below 15 percent</span> <span class="kpi-pill">PM compliance rate above 95 percent</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Box turns per year above 200</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Non-compliance with DOT regulations leading to fines and inspections</span> <span class="risk-pill">Economic inefficiencies due to improper trailer allocation</span> <span class="risk-pill">Operational disruptions due to sudden changes in trailer availability</span> <span class="risk-pill">Increased detention times affecting overall efficiency</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.4, 1.7</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2, 1.5, 1.6, 1.9, 1.10, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.6, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.3, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Terminal Manager &middot; 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Account Manager &middot; 1.5</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Inaccurate demand forecasts leading to over or under-provisioning of trailers</span> <span class="risk-pill">Overcommitting capacity leading to service disruptions</span> <span class="risk-pill">Non-compliance with CSA standards leading to increased safety risks</span> <span class="risk-pill">Delays in acquiring new trailers leading to capacity shortages</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.3, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2, 1.4, 1.5, 1.6, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.7, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Terminal Manager &middot; 1.5, 1.12</span></div>
         </div>
       </div>
 

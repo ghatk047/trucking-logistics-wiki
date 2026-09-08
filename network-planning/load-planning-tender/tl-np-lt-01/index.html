@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-LT-01 &mdash; Inbound EDI 204 Load Tender Receipt and Validation
         </h1>
-        <p>The process TL-NP-LT-01 involves receiving and validating inbound EDI 204 load tenders for intermodal operations at J.B. Hunt Transport Services in Lowell, Arkansas.</p>
+        <p>The process involves receiving and validating EDI 204 load tenders for intermodal moves in the J.B. Hunt Transport Services network.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Load Planning &amp; Tender Management</td></tr>
             <tr><th>L3 Name</th><td>Inbound EDI 204 Load Tender Receipt and Validation</td></tr>
-            <tr><th>Trigger</th><td>Receiving an EDI 204 load tender from a customer or carrier</td></tr>
-            <tr><th>Outcome</th><td>A validated load tender that is ready for further processing and scheduling.</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
+            <tr><th>Trigger</th><td>Receipt of an EDI 204 load tender from a customer or carrier partner.</td></tr>
+            <tr><th>Outcome</th><td>A validated load tender is processed, and resources are allocated for the move.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
           </table>
         </div>
       </div>
@@ -782,144 +782,144 @@
           <td>Receive EDI 204 Tender</td>
           <td>Load Planner</td>
           <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>EDI 204 load tender</td>
+          <td>EDI 204 tender file</td>
           <td>Received tender record in J.B. Hunt 360</td>
-          <td>Tender receipt accuracy above 98%</td>
-          <td>Inaccurate or incomplete tender data leading to delays</td>
+          <td>Tender receipt time within 15 minutes</td>
+          <td>Late tender receipt affecting load planning</td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.2</td>
           <td>Validate Tender Data</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Received tender record in J.B. Hunt 360</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Received tender record</td>
           <td>Validated tender data</td>
-          <td>Data validation accuracy above 95%</td>
-          <td>Incorrect or missing information causing rework</td>
+          <td>Data validation accuracy above 98%</td>
+          <td>Inaccurate or incomplete tender data leading to rework</td>
           <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.3</td>
-          <td>Check Availability</td>
-          <td>Dispatcher</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
+          <td>Check Availability of Resources</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
           <td>Validated tender data</td>
-          <td>Availability report</td>
-          <td>Resource utilization rate above 85%</td>
-          <td>Insufficient capacity leading to missed opportunities</td>
+          <td>Resource availability report</td>
+          <td>Resource allocation accuracy above 95%</td>
+          <td>Insufficient resources affecting load acceptance</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.4</td>
-          <td>Review Regulatory Compliance</td>
-          <td>DOT Compliance Specialist</td>
+          <td>Review and Confirm Tender Details</td>
+          <td>Load Planner</td>
           <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Validated tender data</td>
-          <td>Compliance report</td>
-          <td>Regulatory compliance rate above 99%</td>
-          <td>Non-compliance with 49 CFR Part 395.8 or other regulations</td>
+          <td>Resource availability report</td>
+          <td>Confirmed tender details</td>
+          <td>Tender confirmation rate above 90%</td>
+          <td>Miscommunication of tender details leading to delays</td>
           <td><span class="decision-y">Y</span></td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.5</td>
-          <td>Assign Load to Driver</td>
-          <td>Dispatcher</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster, Samsara</span></td>
-          <td>Availability report, compliance report</td>
-          <td>Assigned load and driver schedule</td>
-          <td>Driver utilization rate above 80%</td>
-          <td>Overloaded drivers leading to fatigue</td>
+          <td>Generate Load Order</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Confirmed tender details</td>
+          <td>Load order document</td>
+          <td>Load order generation time within 1 hour</td>
+          <td>Delayed load order generation affecting dispatch</td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>Update DVIR</td>
-          <td>Driver Manager</td>
-          <td><span class="sys-tag mcleod">Samsara, McLeod LoadMaster</span></td>
-          <td>Assigned load and driver schedule</td>
-          <td>Updated Driver Vehicle Inspection Report (DVIR)</td>
-          <td>DVIR accuracy above 97%</td>
-          <td>Inaccurate DVIRs leading to delays</td>
+          <td>Dispatch Load</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Rand McNally IntelliRoute</span></td>
+          <td>Load order document</td>
+          <td>Dispatched load confirmation</td>
+          <td>Dispatch accuracy above 98%</td>
+          <td>Incorrect dispatch leading to delays</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.7</td>
-          <td>Confirm Load Details</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Updated DVIR</td>
-          <td>Confirmed load details</td>
-          <td>Confirmation accuracy above 95%</td>
-          <td>Incorrect load details causing rework</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Monitor Load Progress</td>
+          <td>Dispatcher, Safety Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, Rand McNally IntelliRoute</span></td>
+          <td>Dispatched load confirmation</td>
+          <td>Load progress report</td>
+          <td>Progress monitoring frequency every 2 hours</td>
+          <td>Lack of real-time monitoring affecting safety and compliance</td>
+          <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.8</td>
-          <td>Generate Load Manifest</td>
-          <td>Dispatcher</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Confirmed load details</td>
-          <td>Load manifest</td>
-          <td>Manifest accuracy above 98%</td>
-          <td>Incorrect manifests leading to delays</td>
+          <td>Conduct Pre-Trip Inspection</td>
+          <td>Driver Manager, Safety Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Load progress report</td>
+          <td>Pre-trip inspection report</td>
+          <td>Pre-trip inspection compliance rate above 95%</td>
+          <td>Non-compliance with pre-trip inspections leading to accidents</td>
+          <td><span class="decision-y">Y</span></td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.9</td>
-          <td>Notify Carrier</td>
-          <td>Carrier Sales Representative</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, Email System</span></td>
-          <td>Load manifest</td>
-          <td>Notification sent to carrier</td>
-          <td>Notification accuracy above 95%</td>
-          <td>Missed notifications leading to delays</td>
-          <td><span class="decision-y">Y</span></td>
-          <td>N</td>
-        </tr>
-        <tr>
-          <td class="step-num">1.10</td>
-          <td>Monitor Load Execution</td>
-          <td>Dispatcher, Driver Manager</td>
-          <td><span class="sys-tag mcleod">Samsara, McLeod LoadMaster</span></td>
-          <td>Load manifest, notification sent</td>
-          <td>Execution status report</td>
-          <td>On-time delivery above 97%</td>
-          <td>Delays in load execution</td>
+          <td>Ensure Compliance with HOS Regulations</td>
+          <td>DOT Compliance Specialist, Driver Manager</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Pre-trip inspection report</td>
+          <td>Hours of Service (HOS) compliance report</td>
+          <td>HOS compliance rate above 98%</td>
+          <td>HOS violations leading to CSA interventions</td>
           <td><span class="decision-y">Y</span></td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
+          <td class="step-num">1.10</td>
+          <td>Finalize Load Documentation</td>
+          <td>Settlement Clerk, Pricing Analyst</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>HOS compliance report</td>
+          <td>Final load documentation</td>
+          <td>Documentation accuracy above 97%</td>
+          <td>Inaccurate documentation affecting billing and settlement</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
           <td class="step-num">1.11</td>
-          <td>Review Post-Load</td>
-          <td>Dispatcher, Load Planner</td>
-          <td><span class="sys-tag jbh360">McLeod LoadMaster, J.B. Hunt 360</span></td>
-          <td>Execution status report</td>
-          <td>Post-load review report</td>
-          <td>Post-load accuracy above 95%</td>
-          <td>Inaccurate post-load data leading to errors</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Notify Customer of Load Status</td>
+          <td>Account Manager, Carrier Sales Representative</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Final load documentation</td>
+          <td>Customer notification</td>
+          <td>Customer notification time within 1 hour</td>
+          <td>Delayed notifications affecting customer satisfaction</td>
+          <td>N</td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.12</td>
-          <td>Update Records</td>
-          <td>Settlement Clerk, Load Planner</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360, McLeod LoadMaster</span></td>
-          <td>Post-load review report</td>
-          <td>Updated records in J.B. Hunt 360 and McLeod LoadMaster</td>
-          <td>Record update accuracy above 98%</td>
-          <td>Incorrect record updates leading to errors</td>
+          <td>Review and Close Load Tender</td>
+          <td>Load Planner, Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Customer notification</td>
+          <td>Closed load tender record</td>
+          <td>Tender closure time within 2 hours</td>
+          <td>Delayed tender closure affecting resource allocation</td>
           <td>N</td>
-          <td><span class="exception-y">Y</span></td>
+          <td>N</td>
         </tr>
               </tbody>
             </table>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97%</span> <span class="kpi-pill">Empty mile percentage below 12%</span> <span class="kpi-pill">Resource utilization rate above 85%</span> <span class="kpi-pill">Regulatory compliance rate above 99%</span> <span class="kpi-pill">Driver utilization rate above 80%</span> <span class="kpi-pill">DVIR accuracy above 97%</span> <span class="kpi-pill">Notification accuracy above 95%</span> <span class="kpi-pill">Post-load accuracy above 95%</span> <span class="kpi-pill">Record update accuracy above 98%</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.50</span> <span class="kpi-pill">Operating ratio above 80%</span> <span class="kpi-pill">Driver turnover rate below 15%</span> <span class="kpi-pill">CSA BASIC percentile below 40%</span> <span class="kpi-pill">PM compliance rate above 95%</span> <span class="kpi-pill">Detention hours per load below 2 hours</span> <span class="kpi-pill">Box turns per year above 300</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Non-compliance with 49 CFR Part 395.8 or other regulations</span> <span class="risk-pill">Overloaded drivers leading to fatigue</span> <span class="risk-pill">Missed notifications leading to delays</span> <span class="risk-pill">Delays in load execution</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.3, 1.5, 1.8, 1.9, 1.10, 1.12</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver Manager &middot; 1.6, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.4</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Carrier Sales Representative &middot; 1.9</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention (49 CFR Part 395)</span> <span class="risk-pill">Inaccurate tender data leading to rework and delays</span> <span class="risk-pill">Insufficient resources affecting load acceptance</span> <span class="risk-pill">Non-compliance with pre-trip inspections leading to accidents</span> <span class="risk-pill">Delayed notifications affecting customer satisfaction</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.2, 1.3, 1.4, 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.6, 1.7</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Driver Manager, Safety Manager &middot; 1.8, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Settlement Clerk, Pricing Analyst &middot; 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Account Manager, Carrier Sales Representative &middot; 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner, Dispatcher &middot; 1.12</span></div>
         </div>
       </div>
 

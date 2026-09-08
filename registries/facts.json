@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "purpose": "Verifiable structural facts about the reference carriers and the North American trucking market, used to ground generated content and to catch invented numbers.",
+    "version": "1.0.0",
+    "as_of": "2025 public filings and industry sources; verify before quoting externally"
+  },
+  "primary_archetype": {
+    "legal_name": "J.B. Hunt Transport Services, Inc.",
+    "ticker": "NASDAQ: JBHT",
+    "headquarters": "Lowell, Arkansas",
+    "founded": 1961,
+    "founder": "Johnnie Bryan Hunt",
+    "segments": [
+      {"code":"JBI","name":"Intermodal","description":"Company-owned 53-foot containers moved on BNSF and Norfolk Southern rail, with J.B. Hunt drayage on both ends. The largest intermodal container fleet in North America, roughly 120,000 containers.","note":"Historic BNSF partnership dating to 1989, the first major intermodal alliance between a truckload carrier and a Class I railroad. Eastern network runs with Norfolk Southern."},
+      {"code":"DCS","name":"Dedicated Contract Services","description":"Long-term contracts where J.B. Hunt operates a customer-dedicated private fleet, typically 3-7 year terms with the customer's branding on equipment.","note":"Includes private fleet conversion, where a shipper outsources an in-house fleet"},
+      {"code":"ICS","name":"Integrated Capacity Solutions","description":"Non-asset freight brokerage operating on the J.B. Hunt 360 platform, matching shipper freight to third-party carrier capacity."},
+      {"code":"FMS","name":"Final Mile Services","description":"Big and bulky home delivery of appliances, furniture and fitness equipment, including threshold, room-of-choice and white-glove installation service levels, run from a network of cross-dock hubs."},
+      {"code":"JBT","name":"Truckload","description":"Asset-light dry van truckload including the 360box drop-trailer program."}
+    ],
+    "platform": {"name":"J.B. Hunt 360","description":"Proprietary multimodal marketplace connecting shippers and carriers across all segments; 360box is the drop-trailer capacity product."},
+    "rail_partners": ["BNSF Railway", "Norfolk Southern"]
+  },
+  "secondary_archetype": {
+    "legal_name": "Schneider National, Inc.",
+    "ticker": "NYSE: SNDR",
+    "headquarters": "Green Bay, Wisconsin",
+    "founded": 1935,
+    "founder": "Al Schneider",
+    "segments": ["Truckload (network and dedicated)", "Intermodal", "Logistics (brokerage and Power Only)"],
+    "note": "Orange tractors are the company's best-known identifier. Rail partners include Union Pacific and CSX. Operates one of the larger battery-electric Class 8 fleets in the US through its Freightliner eCascadia deployment in Southern California. Used here as a reference point where J.B. Hunt's model does not cover a process well - for example company-owned driving academies and Power Only brokerage."
+  },
+  "market_facts": [
+    {"fact":"Federal Interstate gross vehicle weight limit","value":"80,000 lb","source":"23 CFR 658 / 23 USC 127"},
+    {"fact":"Federal single-axle weight limit","value":"20,000 lb","source":"23 USC 127"},
+    {"fact":"Federal tandem-axle weight limit","value":"34,000 lb","source":"23 USC 127"},
+    {"fact":"Maximum daily driving time, property-carrying CMV","value":"11 hours after 10 consecutive hours off duty","source":"49 CFR 395.3(a)(3)"},
+    {"fact":"Maximum on-duty window","value":"14 consecutive hours","source":"49 CFR 395.3(a)(2)"},
+    {"fact":"Required rest break","value":"30 minutes after 8 cumulative hours of driving","source":"49 CFR 395.3(a)(3)(ii)"},
+    {"fact":"Weekly on-duty limits","value":"60 hours in 7 days or 70 hours in 8 days, resettable with 34 consecutive hours off","source":"49 CFR 395.3(b)-(c)"},
+    {"fact":"Short-haul exception radius","value":"150 air miles, 14-hour duty limit","source":"49 CFR 395.1(e)(1)"},
+    {"fact":"Sleeper berth split options","value":"8/2 and 7/3","source":"49 CFR 395.1(g), Sept 2020 HOS final rule"},
+    {"fact":"ELD mandate compliance date","value":"18 December 2017; AOBRD grandfather ended 16 December 2019","source":"49 CFR 395.8"},
+    {"fact":"Minimum public liability insurance, general freight","value":"$750,000","source":"49 CFR 387.9"},
+    {"fact":"Property broker surety bond requirement","value":"$75,000 (BMC-84 or BMC-85 trust)","source":"49 CFR 387.307"},
+    {"fact":"Drug and Alcohol Clearinghouse effective date","value":"6 January 2020","source":"49 CFR 382.701"},
+    {"fact":"Entry-Level Driver Training rule effective date","value":"7 February 2022","source":"49 CFR Part 380 Subparts F and G"},
+    {"fact":"CSA intervention threshold for most general-freight carriers","value":"65th percentile in a BASIC","source":"FMCSA SMS Methodology"},
+    {"fact":"Standard intermodal container length used by domestic US carriers","value":"53 feet","source":"Industry standard; contrasts with 40-foot international marine boxes"},
+    {"fact":"IFTA reporting cadence","value":"Quarterly, due the last day of the month following the quarter","source":"IFTA Articles of Agreement"},
+    {"fact":"IRP registration basis","value":"Apportioned by distance travelled in each member jurisdiction","source":"IRP Plan"},
+    {"fact":"Periodic (annual) vehicle inspection requirement","value":"Every 12 months","source":"49 CFR 396.17"},
+    {"fact":"Driver qualification file retention","value":"Duration of employment plus 3 years","source":"49 CFR 391.51"},
+    {"fact":"Record of duty status retention by the motor carrier","value":"6 months","source":"49 CFR 395.8(k)"},
+    {"fact":"DVIR retention","value":"3 months","source":"49 CFR 396.11(c)"},
+    {"fact":"Number of CSA BASIC categories","value":"7","source":"FMCSA SMS"},
+    {"fact":"Cargo securement standard","value":"49 CFR 393 Subpart I, based on the North American Cargo Securement Standard","source":"49 CFR 393.100-393.136"}
+  ]
+}

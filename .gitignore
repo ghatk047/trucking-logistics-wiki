@@ -1,0 +1,6 @@
+data/
+diagrams/
+scripts/
+*.xlsx
+.DS_Store
+__pycache__/

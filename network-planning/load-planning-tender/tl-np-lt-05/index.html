@@ -732,7 +732,7 @@
           <span class="pid-badge org-badge-ops">NP</span>
           TL-NP-LT-05 &mdash; Appointment Scheduling and Delivery Window Negotiation
         </h1>
-        <p>This process involves scheduling appointments and negotiating delivery windows for intermodal moves at J.B. Hunt Transport Services in Lowell, Arkansas.</p>
+        <p>The process involves scheduling appointments for intermodal container moves and negotiating delivery windows with customers to ensure efficient operations while adhering to regulatory requirements.</p>
       </div>
 
       <div class="card">
@@ -757,9 +757,9 @@
             <tr><th>L1 Domain</th><td>Network &amp; Load Planning</td></tr>
             <tr><th>L2 Process Group</th><td>Load Planning &amp; Tender Management</td></tr>
             <tr><th>L3 Name</th><td>Appointment Scheduling and Delivery Window Negotiation</td></tr>
-            <tr><th>Trigger</th><td>Receipt of a load tender from a customer or broker</td></tr>
-            <tr><th>Outcome</th><td>Successful negotiation and scheduling of appointment times with customers to ensure timely delivery of containers.</td></tr>
-            <tr><th>Systems</th><td><span class="sys-tag mcleod">McLeod LoadMaster</span> <span class="sys-tag telematics">Samsara</span> <span class="sys-tag jbh360">J.B. Hunt 360</span> <span class="sys-tag trimble">PC*MILER</span></td></tr>
+            <tr><th>Trigger</th><td>Receipt of a load tender from J.B. Hunt's network or the J.B. Hunt 360 digital freight marketplace.</td></tr>
+            <tr><th>Outcome</th><td>Successful appointment scheduling and negotiated delivery window that ensures on-time delivery, minimizes empty miles, and complies with all relevant regulations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag trimble">PC*MILER</span> <span class="sys-tag custom">Rand McNally IntelliRoute</span> <span class="sys-tag jbh360">J.B. Hunt 360</span></td></tr>
           </table>
         </div>
       </div>
@@ -781,143 +781,143 @@
           <td class="step-num">1.1</td>
           <td>Load Tender Review</td>
           <td>Load Planner</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Load tender details</td>
-          <td>Load plan proposal</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
+          <td>Tender details from J.B. Hunt 360</td>
+          <td>Load plan with potential routes and carriers</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Inaccurate load data leading to inefficient planning</td>
+          <td>Inaccurate tender information leading to incorrect load planning.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
           <td class="step-num">1.2</td>
-          <td>Capacity Assessment</td>
-          <td>Fleet Manager</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Current fleet status and availability</td>
-          <td>Feasibility report</td>
+          <td>Route Optimization</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag trimble">PC*MILER, Rand McNally IntelliRoute</span></td>
+          <td>Load plan with potential routes and carriers</td>
+          <td>Optimized route with estimated delivery times</td>
           <td>Empty mile percentage below 12 percent</td>
-          <td>Fleet unavailability affecting load acceptance</td>
-          <td><span class="decision-y">Y</span></td>
+          <td>Network congestion or unexpected road closures affecting route optimization.</td>
+          <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.3</td>
-          <td>Initial Appointment Scheduling</td>
+          <td>Appointment Scheduling</td>
           <td>Dispatcher</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Load plan proposal and feasibility report</td>
-          <td>Scheduled appointment times</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Optimized route with estimated delivery times</td>
+          <td>Scheduled appointment for pickup and drop-off</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Customer availability conflicts</td>
-          <td>N</td>
-          <td><span class="exception-y">Y</span></td>
-        </tr>
-        <tr>
-          <td class="step-num">1.4</td>
-          <td>Negotiation of Delivery Windows</td>
-          <td>Account Manager</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Scheduled appointment times and customer feedback</td>
-          <td>Finalized delivery window agreement</td>
-          <td>On-time delivery above 97 percent</td>
-          <td>Customer preference for specific delivery hours</td>
+          <td>Customer availability conflicts leading to rescheduling.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
         <tr>
+          <td class="step-num">1.4</td>
+          <td>Delivery Window Negotiation</td>
+          <td>Carrier Sales Representative</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Scheduled appointment for pickup and drop-off</td>
+          <td>Negotiated delivery window with customer</td>
+          <td>On-time delivery above 97 percent</td>
+          <td>Customer demands for unrealistic delivery windows.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
           <td class="step-num">1.5</td>
           <td>Driver Assignment</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Finalized delivery window agreement</td>
-          <td>Assigned driver and vehicle details</td>
-          <td>Driver turnover below 20 percent</td>
-          <td>Driver availability issues</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Negotiated delivery window with customer</td>
+          <td>Assigned driver for the load</td>
+          <td>On-time delivery above 97 percent</td>
+          <td>Driver availability conflicts leading to delays.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.6</td>
-          <td>Pre-trip Inspection</td>
-          <td>Safety Manager</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Assigned driver and vehicle details</td>
-          <td>Pre-trip inspection report</td>
-          <td>PM compliance rate above 95 percent</td>
-          <td>Vehicle maintenance issues delaying departure</td>
+          <td>Driver Qualification Check</td>
+          <td>DOT Compliance Specialist</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Assigned driver for the load</td>
+          <td>Qualified driver status</td>
+          <td>CSA BASIC percentile below 15 percent</td>
+          <td>Driver disqualification due to medical or regulatory issues.</td>
           <td><span class="decision-y">Y</span></td>
-          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.7</td>
-          <td>Driver Training and Compliance Check</td>
-          <td>DOT Compliance Specialist</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Assigned driver details</td>
-          <td>Compliance check report</td>
-          <td>CSA BASIC percentile below 25 percent</td>
-          <td>Driver compliance violations</td>
-          <td><span class="decision-y">Y</span></td>
-          <td>N</td>
-        </tr>
-        <tr>
-          <td class="step-num">1.8</td>
-          <td>Load Confirmation and Documentation</td>
+          <td>Load Documentation</td>
           <td>Settlement Clerk</td>
-          <td><span class="sys-tag mcleod">McLeod LoadMaster</span></td>
-          <td>Finalized delivery window agreement and driver details</td>
-          <td>Load confirmation document</td>
-          <td>Revenue per loaded mile above $1.20</td>
-          <td>Documentation errors affecting billing</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Qualified driver status</td>
+          <td>Completed load documentation</td>
+          <td>Revenue per loaded mile above $1.50</td>
+          <td>Incomplete or inaccurate documentation leading to billing issues.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
-          <td class="step-num">1.9</td>
-          <td>Route Optimization</td>
-          <td>Load Planner</td>
-          <td><span class="sys-tag trimble">PC*MILER</span></td>
-          <td>Finalized delivery window agreement and driver details</td>
-          <td>Optimized route plan</td>
-          <td>Operating ratio above 80 percent</td>
-          <td>Suboptimal routing leading to increased costs</td>
+          <td class="step-num">1.8</td>
+          <td>Driver Pre-Trip Inspection</td>
+          <td>Safety Manager</td>
+          <td><span class="sys-tag jbh360">PC*MILER, J.B. Hunt 360</span></td>
+          <td>Completed load documentation</td>
+          <td>Pre-trip inspection report</td>
+          <td>PM compliance rate above 95 percent</td>
+          <td>Vehicle maintenance issues delaying departure.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.9</td>
+          <td>Load Dispatch</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Pre-trip inspection report</td>
+          <td>Dispatched load with driver and vehicle details</td>
+          <td>On-time delivery above 97 percent</td>
+          <td>Communication errors leading to delayed dispatch.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.10</td>
-          <td>Final Review and Approval</td>
-          <td>Terminal Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Optimized route plan and load confirmation document</td>
-          <td>Approved appointment schedule</td>
-          <td>On-time delivery above 97 percent</td>
-          <td>Last-minute changes affecting schedule</td>
+          <td>Driver Hours of Service (HOS) Monitoring</td>
+          <td>DOT Compliance Specialist</td>
+          <td><span class="sys-tag jbh360">PC*MILER, J.B. Hunt 360</span></td>
+          <td>Dispatched load with driver and vehicle details</td>
+          <td>Compliance with HOS regulations</td>
+          <td>HOS violation rate below 1 percent</td>
+          <td>Driver fatigue leading to potential CSA interventions.</td>
           <td><span class="decision-y">Y</span></td>
-          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.11</td>
-          <td>Communication with Customers</td>
-          <td>Account Manager</td>
-          <td><span class="sys-tag jbh360">J.B. Hunt 360</span></td>
-          <td>Approved appointment schedule</td>
-          <td>Customer communication log</td>
+          <td>Customer Communication</td>
+          <td>Carrier Sales Representative</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Compliance with HOS regulations</td>
+          <td>Updated customer status and delivery confirmation</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Customer dissatisfaction due to scheduling issues</td>
+          <td>Customer dissatisfaction due to delays or miscommunication.</td>
           <td>N</td>
           <td><span class="exception-y">Y</span></td>
         </tr>
         <tr>
           <td class="step-num">1.12</td>
-          <td>Post-Load Review and Feedback</td>
-          <td>Dispatcher</td>
-          <td><span class="sys-tag telematics">Samsara</span></td>
-          <td>Driver feedback and post-load data</td>
-          <td>Process improvement recommendations</td>
+          <td>Post-Delivery Review</td>
+          <td>Load Planner</td>
+          <td><span class="sys-tag jbh360">J.B. Hunt 360, PC*MILER</span></td>
+          <td>Updated customer status and delivery confirmation</td>
+          <td>Review of load performance and feedback incorporation</td>
           <td>On-time delivery above 97 percent</td>
-          <td>Continuous process improvements</td>
+          <td>Inaccurate load data affecting future planning.</td>
           <td><span class="decision-y">Y</span></td>
           <td>N</td>
         </tr>
@@ -931,10 +931,10 @@
         <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
         <div class="card-body">
           <p class="mb-8"><strong>KPIs</strong></p>
-          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.20</span> <span class="kpi-pill">Operating ratio above 80 percent</span> <span class="kpi-pill">Driver turnover below 20 percent</span> <span class="kpi-pill">CSA BASIC percentile below 25 percent</span> <span class="kpi-pill">PM compliance rate above 95 percent</span></div>
+          <div class="kpi-list mb-8"><span class="kpi-pill">On-time delivery above 97 percent</span> <span class="kpi-pill">Empty mile percentage below 12 percent</span> <span class="kpi-pill">Revenue per loaded mile above $1.50</span> <span class="kpi-pill">CSA BASIC percentile below 15 percent</span> <span class="kpi-pill">PM compliance rate above 95 percent</span> <span class="kpi-pill">HOS violation rate below 1 percent</span></div>
           <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
-          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Customer dissatisfaction due to scheduling issues</span> <span class="risk-pill">Vehicle maintenance issues delaying departure</span> <span class="risk-pill">Driver compliance violations</span> <span class="risk-pill">Continuous process improvements</span></div>
-          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.5, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Fleet Manager &middot; 1.2</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.3, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Account Manager &middot; 1.4, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.6</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.7</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Settlement Clerk &middot; 1.8</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Terminal Manager &middot; 1.10</span></div>
+          <div class="kpi-list"><span class="risk-pill">HOS violation exposing the carrier to a CSA intervention</span> <span class="risk-pill">Driver fatigue leading to potential CSA interventions</span> <span class="risk-pill">Customer dissatisfaction due to delays or miscommunication</span> <span class="risk-pill">Inaccurate load data affecting future planning</span> <span class="risk-pill">Network congestion or unexpected road closures affecting route optimization.</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Swim Lanes</strong></p><div class="kpi-list"><span class="kpi-pill" style="background:#e2e8f0;color:#334155">Load Planner &middot; 1.1, 1.2, 1.3, 1.4, 1.5</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Dispatcher &middot; 1.3, 1.5, 1.6, 1.7, 1.8, 1.9</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Carrier Sales Representative &middot; 1.4, 1.11</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">DOT Compliance Specialist &middot; 1.6, 1.10</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Safety Manager &middot; 1.8</span> <span class="kpi-pill" style="background:#e2e8f0;color:#334155">Settlement Clerk &middot; 1.7</span></div>
         </div>
       </div>
 
